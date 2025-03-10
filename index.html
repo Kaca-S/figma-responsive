@@ -12,7 +12,7 @@
         <section>
             <h3 class="logo">Head <span class="logo-dot">.</span></h3>
         </section>
-        <section>
+        <section class="nav-content">
             <nav>
                 <ul>
                     <li><a href="pages/works.html">Works</a></li>
@@ -20,6 +20,7 @@
                     <li><a href="pages/contacts.html">Contacts</a></li>
                 </ul>
             </nav>
+            <img class="mobile-icon" src="images/dots.svg" alt="Menu icon">
         </section>
     </header>
     <main>
@@ -28,9 +29,14 @@
         <p class="main-text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
                             Donec viverra eleifend lacus, vitae ullamcor.</p>
     </div>
-    <section>
+    <picture>
+        <source srcset="images/Bitmap-tablet" media="(max-width: 320px)">
+        <source srcset="images/Bitmap-tablet.png" media="(max-width: 768px)">
+        <img src="images/Bitmap-desktop.png" alt="Wild horses in the field" style="width: 100%; height: auto;">
+    </picture>
+    <!-- <section>
         <img src="images/Bitmap-desktop.png" alt="Wild horses in the field">
-    </section>
+    </section> -->
     </main>
 </body>
 </html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro";
+    line-height: 1.5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* General padding */
+}
+.logo {
+    font-family: Aldrich;
+    font-size: 24px; /* Responsive logo size */
+    color: #242635; /* Logo color */
+}
+.logo-dot {
+    color: #242635;
+}
+nav ul {
+    display: flex;
+    list-style: none; /* Remove bullet points */
+}
+
+nav li {
+    margin-left: 30px; /* Space between nav items */
+}
+
+nav a {
+    color: #242635 ; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.main-content {
+    text-align: center; /* Center text */
+    padding: 40px 20px; /* Padding around main content */
+}
+.main-title {
+    font-size: 90px; /* Responsive title size */
+}
+.main-text {
+    font-size: 22px; /* Responsive paragraph size */
+    max-width: 600px; /* Limit text width for readability */
+    margin: 20px auto; /* Center margin */
+}
+
+section .nav-content .mobile-icon {
+    display: none; /* Hide by default */
+    
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        padding: 20px 40px;
+    }
+    .main-title {
+        font-size: 90px; /* Responsive size for larger screens */
+    }
+    .main-text {
+        font-size: 22px; /* Smaller font for texts */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 20px; /* Less padding for tablet */
+    }
+    .logo {
+        font-family: Baloo;
+    }
+    nav ul {
+        flex-direction: row; /* Maintain row for navigation */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+    nav li {
+        margin-left: 20px; /* Smaller spacing between items */
+    }
+    .main-title {
+        font-size: 72px; /* Title size */
+    }
+    .main-text {
+        font-size: 22px; /* Smaller paragraph size */
+    }
+
+    
+}
+@media screen and (max-width: 320px) {
+    header {
+        flex-direction: row; /* Stack items for mobile */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .logo {
+        font-family: 'Baloo', sans-serif; /* Ensure font is loaded */
+    }
+
+    nav {
+        display: none; /* Hide the navigation */
+    }
+
+    .nav-content .mobile-icon {
+        display: block; /* Show the mobile SVG icon on small screens */
+        max-width: none; /* Prevent max-width restriction */
+        max-height: none; /* Prevent max-height restriction */
+        margin: 10px 0; /* Spacing around the icon */
+    }
+    @media screen and (min-width: 321px) {
+        .nav-content .mobile-icon {
+            display: none; /* Hide the mobile SVG icon on larger screens */
+        }
+    }
+
+    .main-title {
+        font-size: 36px; /* Further reduce title size */
+    }
+
+    .main-text {
+        font-size: 12px; /* Further reduce paragraph size */
+    }
+}
