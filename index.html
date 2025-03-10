@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <title>Patagonia</title>
 </head>
 <body>
@@ -29,10 +32,12 @@
         <p class="main-text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
                             Donec viverra eleifend lacus, vitae ullamcor.</p>
     </div>
+    <div class="pic-bit"></div>
     <picture>
-        <source srcset="images/Bitmap-tablet" media="(max-width: 320px)">
-        <source srcset="images/Bitmap-tablet.png" media="(max-width: 768px)">
-        <img src="images/Bitmap-desktop.png" alt="Wild horses in the field" style="width: 100%; height: auto;">
+        <source media="(max-width: 320px)" srcset="images/Bitmap-mobile.png">
+        <source media="(max-width: 768px)" srcset="images/Bitmap-tablet.png">
+        <source media="(max-width: 1440px)" srcset="images/Bitmap-tablet.png">
+        <img src="images/Bitmap-desktop.png" alt="Wild horses in the field">
     </picture>
     <!-- <section>
         <img src="images/Bitmap-desktop.png" alt="Wild horses in the field">
