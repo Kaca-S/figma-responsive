@@ -1,5 +1,6 @@
 body {
-    width: auto;
+    max-width: 1440px;
+    width: 100%;
     margin: auto;
     padding: 0;
     line-height: 1.5;
@@ -12,7 +13,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 40px;
+    padding: 0 40px;
     margin: auto;
     width: 100%;
 }
@@ -28,17 +29,19 @@ nav ul {
     gap: 28px;
 }
 nav li {
-    margin-left: 30px; 
+    /* margin-left: 30px;  */
 }
 nav a {
     color: #242635 ;
     text-decoration: none; 
 }
 .main-content {
+    display: flex;
+    flex-direction: column;
     text-align: center; 
     padding: 40px 20px; 
-    margin-inline: auto;
-    width: 100%;
+    margin: 0;
+    max-width: 100%;
 }
 .main-title {
     font-family: "Poppins", sans-serif;
@@ -56,27 +59,28 @@ nav a {
     font-weight: 400;
     line-height: 33px;
     max-width: 600px;
-    min-height: 100px;
+    /* min-height: 100px; */
     margin: 0 auto; 
     padding: 5px;
+    overflow-wrap: break-word;
 }
 section .nav-content .mobile-icon {
     display: none;
 }
-.pic-bit {
+/* .pic-bit {
     width: 100%; 
     max-width: 100%;
     height: auto;
     display: block;
     margin-inline: auto;
     padding: 10px;
-}
+} */
 @media screen and (max-width: 1440px) {
     .pic-bit {
         margin: 30px; 
     }
     header {
-        padding: 20px 40px;
+        padding: 20px 0;
     }
     .main-title {
         font-size: 90px;
@@ -91,7 +95,7 @@ section .nav-content .mobile-icon {
         margin: 20px; 
     }
     header {
-        padding: 20px 20px; 
+        padding: 20px 0; 
     }
     .logo {
         font-family: "Fredoka", sans-serif;
@@ -105,8 +109,8 @@ section .nav-content .mobile-icon {
         padding: 0; 
         margin: 0; 
     }
-    nav li {
-        margin-left: 20px; 
+    .main-content {
+        margin: 0;
     }
     .main-title {
         font-size: 72px; 
@@ -114,6 +118,13 @@ section .nav-content .mobile-icon {
     }
     .main-text {
         font-size: 22px; 
+    }
+}
+@media screen and (max-width: 497px) {
+    .main-text {
+        max-width: 90%; 
+        margin: 0; 
+        padding: 10px 15px; 
     }
 }
 @media screen and (max-width: 320px) {
